@@ -3,17 +3,138 @@
   <!-- This is the head of our html where we add external resources and metadata-->
   <head>
     <title>Peekaboo!</title>
-    <!-- This is our css stylesheet-->
 
-    <!--This is our grid stylesheet-->
-
-    <!--This is our google fonts-->
-
-    <!--This is our css stylesheet, this always goes last-->
-    <link rel="stylesheet" href="style.css" />
+    <!-------- This is our font-awesome icons------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-------- Gridlex for our flexbox grids------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"
+    />
+    <!-------- This is our custom stylesheet------->
+    <link href="/style.css" rel="stylesheet" />
   </head>
   <!-- This is the body, this is where all of your page content goes -->
   <body>
-    <h1>Hello World</h1>
+    <!--------------- Header banner ------------------>
+    <header class="padded grid">
+      <div class="col-12-middle">
+        <h3>You have to walk before you can run!</h3>
+        <h1>The Dog Walker</h1>
+      </div>
+    </header>
+
+    <!--------------- Gallery section ------------------>
+    <section class="grid">
+      <div class="padded col-6">
+        <h2>Happy dogs</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
+          accusamus veritatis esse sunt delectus tempore consequatur sint. Nam
+          minima sequi nobis voluptates fuga et id eaque enim dicta repudiandae.
+        </p>
+      </div>
+      <div class="bg-image col-6">
+        <!--Background image pup 1-->
+      </div>
+      <div class="bg-image col-6">
+        <!--Background image pup 2-->
+      </div>
+      <div class="padded col-6">
+        <h2>Tired pups</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
+          accusamus veritatis esse sunt delectus tempore consequatur sint. Nam
+          minima sequi nobis voluptates fuga et id eaque enim dicta repudiandae.
+        </p>
+      </div>
+    </section>
+
+    <!-------------------- Feature icon grid ---------------------->
+    <section class="padded grid bg-dark">
+      <div class="padded-sm col-12">
+        <h2>Features you will love</h2>
+      </div>
+      <div class="padded-sm col-3">
+        <i class="fas fa-dog"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+          provident quas similique dolorum facere, amet repellat a? Harum
+          eveniet magnam similique a sequi, est quo repellendus obcaecati
+          incidunt quia ipsa.
+        </p>
+      </div>
+      <div class="padded-sm col-3">
+        <i class="fas fa-dog"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+          provident quas similique dolorum facere, amet repellat a? Harum
+          eveniet magnam similique a sequi, est quo repellendus obcaecati
+          incidunt quia ipsa.
+        </p>
+      </div>
+      <div class="padded-sm col-3">
+        <i class="fas fa-dog"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+          provident quas similique dolorum facere, amet repellat a? Harum
+          eveniet magnam similique a sequi, est quo repellendus obcaecati
+          incidunt quia ipsa.
+        </p>
+      </div>
+      <div class="padded-sm col-3">
+        <i class="fas fa-dog"></i>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+          provident quas similique dolorum facere, amet repellat a? Harum
+          eveniet magnam similique a sequi, est quo repellendus obcaecati
+          incidunt quia ipsa.
+        </p>
+      </div>
+    </section>
+    <!-------------------- Image banner ---------------------->
+    <section class="padded">
+      <h3>Make sure your dog gets the love and care it needs</h3>
+    </section>
+    <!-------------------- Testimonials section ---------------------->
+    <section class="padded grid">
+      <div class="col-1">
+        <span> " </span>
+      </div>
+      <div class="col-10">
+        <p>
+          I have so much more free time now that I don't have to walk my dog
+          twice a day.
+        </p>
+        <p>-A very happy customer</p>
+      </div>
+      <div class="col-1">
+        <span> " </span>
+      </div>
+    </section>
+    <!-------------------- Footer ---------------------->
+    <footer class="padded-sm grid-spaceBetween bg-dark">
+      <div class="col-5">
+        <h2>Let's connect</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa
+          sapiente eos quibusdam vel nulla ipsum veniam architecto, perferendis
+          praesentium debitis laborum laudantium possimus iusto asperiores
+          quaerat natus. Ad, magnam!
+        </p>
+      </div>
+      <div class="col-6">
+        <p>Call: 09233 7722</p>
+        <p>Email: walkme@thedogwalker.co</p>
+        <p>Office: 55 Main Street, Baltimore</p>
+        <p>Instagram: @thedogwalker</p>
+      </div>
+    </footer>
   </body>
 </html>
