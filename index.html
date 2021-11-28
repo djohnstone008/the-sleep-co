@@ -2,7 +2,7 @@
 <html>
   <!-- This is the head of our html where we add external resources and metadata-->
   <head>
-    <title>Peekaboo!</title>
+    <title>The Dog Walker</title>
 
     <!-------- This is our font-awesome icons------->
     <link
@@ -17,37 +17,55 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"
     />
+
+    <!-------- Google-font: catamaran (200,400,500,800) ------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-------- This is our custom stylesheet------->
     <link href="/style.css" rel="stylesheet" />
   </head>
   <!-- This is the body, this is where all of your page content goes -->
   <body>
     <!--------------- Header banner ------------------>
-    <header class="padded grid">
-      <div class="col-12-middle">
-        <h3>You have to walk before you can run!</h3>
-        <h1>The Dog Walker</h1>
+    <header class="padded grid text-center tall-80">
+      <div class="col-12-top">
+        <h3 class="shadow xxl-text">
+          You have to <span class="featured-text"> walk </span> <br> before you can
+          <span class="featured-text"> run! </span>
+        </h3>
+        <h1 class="font-weight-extra-bold shadow">The Dog Walker</h1>
       </div>
     </header>
 
-    <!--------------- Gallery section ------------------>
+    <!--------------- Gallery/ about section ------------------>
     <section class="grid">
-      <div class="padded col-6">
-        <h2>Happy dogs</h2>
+      <div class="padded col-6-middle">
+        <h2>A <span class="featured-text"> tired </span> dog...</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
-          accusamus veritatis esse sunt delectus tempore consequatur sint. Nam
-          minima sequi nobis voluptates fuga et id eaque enim dicta repudiandae.
+          accusamus veritatis esse sunt delectus.
+        </p>
+        <p>
+          Tempore consequatur sint. Nam minima sequi nobis voluptates fuga et id
+          eaque enim dicta repudiandae. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Mollitia odit sunt optio quam ut, doloremque in
+          error laudantium quibusdam esse a? Eligendi dicta dolores recusandae
+          exercitationem est reiciendis consectetur quos.
         </p>
       </div>
-      <div class="bg-image col-6">
+      <div class="bg-image bg-tired col-6 tall-70">
         <!--Background image pup 1-->
       </div>
-      <div class="bg-image col-6">
+      <div class="bg-image bg-happy col-6 tall-70">
         <!--Background image pup 2-->
       </div>
-      <div class="padded col-6">
-        <h2>Tired pups</h2>
+      <div class="padded col-6-middle">
+        <h2>Is a <span class="featured-text"> happy </span> dog.</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
           accusamus veritatis esse sunt delectus tempore consequatur sint. Nam
@@ -56,10 +74,10 @@
       </div>
     </section>
 
-    <!-------------------- Feature icon grid ---------------------->
+    <!-------------------- Features icon grid ---------------------->
     <section class="padded grid bg-dark">
-      <div class="padded-sm col-12">
-        <h2>Features you will love</h2>
+      <div class="padded-sm col-12 text-center">
+        <h2>Service you can <span class="featured-text"> rely </span> on</h2>
       </div>
       <div class="padded-sm col-3">
         <i class="fas fa-dog"></i>
@@ -99,29 +117,33 @@
       </div>
     </section>
     <!-------------------- Image banner ---------------------->
-    <section class="padded">
-      <h3>Make sure your dog gets the love and care it needs</h3>
+    <section class="padded text-center bg-pug tall-70 grid">
+      <div class="col-12 big-text tall-70">
+       <h3>  Make sure your dog gets the 
+         <span class="white-text"> love </span> 
+         and <span class="white-text"> care </span> it needs.
+       </h3>
     </section>
     <!-------------------- Testimonials section ---------------------->
-    <section class="padded grid">
-      <div class="col-1">
-        <span> " </span>
+    <section class="padded-lg grid text-center">
+      <div class="col-1 text-right">
+        <span class="quote-icon"> “ </span>
       </div>
-      <div class="col-10">
-        <p>
+      <div class="col-10 text-center">
+        <p class="medium-text font-weight-light">
           I have so much more free time now that I don't have to walk my dog
           twice a day.
         </p>
-        <p>-A very happy customer</p>
+        <p class="subtitle">-A very happy customer</p>
       </div>
       <div class="col-1">
-        <span> " </span>
+        <span class="quote-icon"> " </span>
       </div>
     </section>
     <!-------------------- Footer ---------------------->
-    <footer class="padded-sm grid-spaceBetween bg-dark">
-      <div class="col-5">
-        <h2>Let's connect</h2>
+    <footer class="padded grid-spaceBetween bg-dark">
+      <div class="col-5-bottom">
+        <h2>Let's <span class="featured-text"> connect </span></h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa
           sapiente eos quibusdam vel nulla ipsum veniam architecto, perferendis
@@ -129,11 +151,12 @@
           quaerat natus. Ad, magnam!
         </p>
       </div>
-      <div class="col-6">
-        <p>Call: 09233 7722</p>
-        <p>Email: walkme@thedogwalker.co</p>
-        <p>Office: 55 Main Street, Baltimore</p>
-        <p>Instagram: @thedogwalker</p>
+      <div class="col-5-bottom">
+        <p> <strong class="featured-text"> Call: </strong> <a href="tell:#"> 09233 7722 </a> </p>
+        <p> <strong class="featured-text"> Email: </strong> <a href="mailto:#"> walkme@thedogwalker.co </a> </p>
+        <p> <strong class="featured-text"> Office: </strong> 55 Main Street, Baltimore </p>
+        <p> <strong class="featured-text"> Instagram: </strong> 
+          <a href="https://www.instagram.com/"> @thedogwalker </a> </p>
       </div>
     </footer>
   </body>
