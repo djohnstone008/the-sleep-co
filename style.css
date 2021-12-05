@@ -25,6 +25,8 @@ body {
 
 .padded-lg{ padding: 10%;}
 
+.margin-1 {margin-right: 1rem;}
+
 .bg-dark {
   background-color: #192b37;
   color: white;
@@ -125,12 +127,28 @@ footer a{
   background-image: url('/Images/the-sleep-co\ pup\ 5\ \(3\).jpg');
   background-position: 50% 60%;
 }
-.bg-pug{ 
+.bg-pug { 
   background-image: url('/Images/pug\ photo-1517849845537-4d257902454a.jpg');
   background-repeat: repeat-x;
   background-position: 50% 60%;
 }
 
+.bg-lying {
+  background-image: url('/Images/the-sleep-co\ dog\ lying\ in\ grass.jpg');
+  background-position: 50% 10%;
+}
+
+.bg-grass {
+  background-image: url('/Images/the-sleep-co\ grass.jpg');
+  background-position: 50% 60%;
+}
+
+.tab {
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem; 
+  text-decoration: none;
+}
 
 /*Icon grid*/
 .fas {
