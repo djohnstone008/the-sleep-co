@@ -1,9 +1,16 @@
+/* 
+  Colors: 
+  Yellow: #FFBE00
+  Navy: #192B37
+*/
+
+/* CSS Reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-/*-----temporary styles for structural html------ */
+/*-----Universal Styles and Utility classes------ */
 
 
 /*image styles*/
@@ -11,24 +18,16 @@
   background-image: url("/images/the-sleep-co\ pup\ 1\ \(4\).jpg");
   background-size: cover;
   min-height: 10rem;
+  background-repeat: no-repeat;
 }
 
 .landscape { padding-bottom: 65%; }
 .portrait { padding-bottom: 125%; }
 .square { padding-bottom: 100%; }
 
-
-/*universal styles and utility classes */
-
-body {
-  font-family: "catamaran", san-serif;
-  color: #192b37;
-}
-
 .padded {padding: 5%;}
 .padded-sm {padding: 1rem;}
 .padded-xs {padding: 0.5rem;}
-
 .padded-lg{ padding: 10%;}
 
 .margin-1 {margin-right: 1rem;}
@@ -54,17 +53,19 @@ body {
 .tall-100 {min-height: 100vh;}
 
 /* Typography Styles */
+body {
+  font-family: "catamaran", san-serif;
+  color: #192b37;
+}
+
 h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   line-height: 1.1;
 }
 
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3{ line-height: 1;}
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.5rem; }
 
 p {
   font-weight: 200;
@@ -87,31 +88,33 @@ a:hover{
   color: #ffbe00;
 }
 
-/* Utility classes */
-
-.right { text-align: right;}
-.center { text-align: center; }
-
-.featured-text {color: #ffbe00;}
-.white-text{ color: white;}
-
+/* Specific typography classes */
 .font-weight-light {font-weight: 200;}
 .font-weight-normal {font-weight: normal;}
 .font-weight-extra-bold {font-weight: 800;}
+
+.left   { text-align: left;}
+.right  { text-align: right;}
+.center { text-align: center; }
+
+.featured-text {color: #ffbe00;}
+.white-text    { color: white;}
+
+.small-text {
+  font-size: 1.5rem;
+  line-height: 1;
+}
 
 .medium-text{ 
   font-size: 2.2rem;
   line-height: 1.2;
 }
 
-.small-text {
-  font-size: 1.5rem;
-  line-height: 1;
-}
 .big-text   {
   font-size: 4rem;
   line-height: 1;
 }
+
 .xxl-text   { font-size: 6rem;}
 
 .subtitle{ 
@@ -119,15 +122,18 @@ a:hover{
   color:rgb(120, 120, 125);
  }
 
-.quote-icon{
-  font-size: 6rem;
-  display: inline-block;
-  color:rgb(120, 120, 125);
-  line-height: 1;
-}
 .shadow {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+/*Font awesome icons -----------*/
+.fas,
+.fab {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 /*Header and footer styles*/
@@ -136,6 +142,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 1% 5%;
 }
 header h3 {
   font-size: 5.5rem;
@@ -178,10 +185,10 @@ footer a{
   text-decoration: none;
 }
 
-/*Icon grid*/
-.fas {
-  display: block;
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+/* Testimonials section -------- */
+.quote-icon{
+  font-size: 6rem;
+  display: inline-block;
+  color:rgb(120, 120, 125);
+  line-height: 1;
 }
