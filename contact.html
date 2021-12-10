@@ -32,22 +32,22 @@
 
   <!-- This is the body, this is where all of your page content goes -->
   <body>
-    <!-- Linking home page  -->
-    <header class="grid text-center tall-80 bg-lying">
-      <div class="col-12 grid tall-50"> 
-        <div class="col-4"> 
+    <!--------------- Header banner ------------------>
+    <header class="grid text-center tall-90 bg-grass">
+      <div class="col-12-top grid"> 
+        <div class="col-4-middle"> 
           <a href="/index.html" class="logo"> 
             <h2 class="featured-text"> The Dog Walker </h2>
           </a>
         </div>
-        <nav class="col-8 right">
+        <nav class="col-8-middle text-right tab shadow">
           <a href="index.html"> Home </a>
           <a href="about.html"> About </a>
           <a href="products.html"> Products </a>
           <a href="contact.html"> Contact </a>
         </nav>
       </div>
-        <div class="col-12-top">
+        <div class="col-12">
           <h3 class="shadow xxl-text editable">
            Why <span class="featured-text"> wait? </span>
           </h3>
@@ -68,7 +68,19 @@
     </p>
   </div>
   <div class="col-6 padded"> 
-    <h2> ADD CONTACT FORM HERE </h2>
+    <form>
+        <label for="_name"> Your Name </label>
+        <input type="text" name="_name" id="_name" placeholder="Name" />
+        
+        <label for="_replyto"> Your Email </label>
+        <input type="email" name="_replyto" id="_replyto"  
+        placeholder="Email" />
+        
+        <label for="message"> Tell me everything about your pup... </label>
+        <textarea name="message" placeholder="I have a 3 year old golden retriever who loves..." rows="4"></textarea>
+        
+        <button type="submit" class="button"> SUBMIT </button> 
+      </form>
   </div>
 
 </section>

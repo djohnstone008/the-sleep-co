@@ -1,4 +1,6 @@
-/* 
+
+
+ /*
   Colors: 
   Yellow: #FFBE00
   Navy: #192B37
@@ -113,7 +115,7 @@ p:last-child {
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
-.landscape     { padding-bottom: 66%:  }
+.landscape     { padding-bottom: 66%;  }
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; }

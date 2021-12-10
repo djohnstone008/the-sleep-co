@@ -41,10 +41,6 @@
   background-color: #E3ECF2
 }
 
-.text-left {text-align: left;}
-.text-center {text-align: center;}
-.text-right {text-align: right;}
-
 .tall-50 {min-height: 50vh;}
 .tall-60 {min-height: 60vh;}
 .tall-70 {min-height: 70vh;}
@@ -93,9 +89,9 @@ a:hover{
 .font-weight-normal {font-weight: normal;}
 .font-weight-extra-bold {font-weight: 800;}
 
-.left   { text-align: left;}
-.right  { text-align: right;}
-.center { text-align: center; }
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
 
 .featured-text {color: #ffbe00;}
 .white-text    { color: white;}
@@ -127,6 +123,13 @@ a:hover{
     1px 1px 0 #000;
 }
 
+.tab {
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem; 
+  text-decoration: none;
+}
+
 /*Font awesome icons -----------*/
 .fas,
 .fab {
@@ -149,11 +152,20 @@ header h3 {
   line-height: 1;
 }
 
+nav a {
+  padding: 0.5rem;
+  display: inline-block;
+  border: none;
+}
+
+.logo h2 { margin-bottom: 0;}
+
 footer a{
   border: none;
 }
 /*Background images*/
 .bg-featured { background-color: #F4B525; }
+
 .bg-tired {
   background-image: url('/Images/the-sleep-co\ pup\ 1\ \(4\).jpg');
 }
@@ -169,8 +181,7 @@ footer a{
 
 .bg-lying {
   background-image: url('/Images/the-sleep-co\ dog\ lying\ in\ grass.jpg');
-  background-position: 50% 0%;
-  padding: 30vh;
+  background-position: 50%;
 }
 
 .bg-grass {
@@ -178,11 +189,41 @@ footer a{
   background-position: 50% 60%;
 }
 
-.tab {
+.bg-playing {
+  background-image: url('/Images/dogs\ playing.jpg');
+  background-position: cover;
+}
+
+/* Buttons and forms */
+
+input, 
+textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  /* Default border to prevent page from jumping when you click */
+  border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #FFBE00;
+  outline: none;
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  background-color: #FFBE00;
+  appearance: none;
+  border: 2px solid #FFBE00;
+  color: inherit;
+}
+
+.button:hover {
   color: white;
-  font-size: 1rem;
-  padding: 0.5rem; 
-  text-decoration: none;
 }
 
 /* Testimonials section -------- */
