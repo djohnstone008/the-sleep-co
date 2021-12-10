@@ -135,7 +135,8 @@ footer a{
 
 .bg-lying {
   background-image: url('/Images/the-sleep-co\ dog\ lying\ in\ grass.jpg');
-  background-position: 50% 10%;
+  background-position: 50% 0%;
+  padding: 30vh;
 }
 
 .bg-grass {
