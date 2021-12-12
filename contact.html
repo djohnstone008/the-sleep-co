@@ -2,7 +2,11 @@
 <html>
   <!-- This is the head of our html where we add external resources and metadata-->
   <head>
-    <title> About The Dog Walker</title>
+
+    <!-- Viewport meta for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About The Dog Walker</title>
 
     <!-------- This is our font-awesome icons------->
     <link
@@ -34,119 +38,126 @@
   <body>
     <!--------------- Header banner ------------------>
     <header class="grid text-center tall-90 bg-grass">
-      <div class="col-12-top grid"> 
-        <div class="col-4-middle"> 
-          <a href="/index.html" class="logo"> 
-            <h2 class="featured-text"> The Dog Walker </h2>
+      <div class="col-12-top grid">
+        <div class="col-6_sm-12-middle sm-padded-b-0">
+          <a href="/index.html" class="logo">
+            <h2 class="featured-text">The Dog Walker</h2>
           </a>
         </div>
-        <nav class="col-8-middle text-right tab shadow">
+        <nav class="col-6_sm-12-middle text-right sm-text-center tab shadow">
           <a href="index.html"> Home </a>
           <a href="about.html"> About </a>
           <a href="products.html"> Products </a>
           <a href="contact.html"> Contact </a>
         </nav>
       </div>
-        <div class="col-12">
-          <h3 class="shadow xxl-text editable">
-           Why <span class="featured-text"> wait? </span>
-          </h3>
-          <h1 class="font-weight-extra-bold shadow editable">
-            Your dog's next walk is just one call away. 
-          </h1>
-        </div>
+      <div class="col-12">
+        <h3 class="shadow xxl-text editable">
+          Why <span class="featured-text"> wait? </span>
+        </h3>
+        <h1 class="font-weight-extra-bold shadow editable">
+          Your dog's next walk is just one call away.
+        </h1>
+      </div>
     </header>
 
-<!-- Contact form -->
-<section class="grid bg-dark light-text padded"> 
-  <div class="col-6 padded"> 
-    <h2 class="editable"> Let's <span class="featured-text editable"> connect! </span> </h2>
-    <p class="editable">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
-      accusamus veritatis esse sunt delectus tempore consequatur sint. Nam
-      minima sequi nobis voluptates fuga et id eaque enim dicta repudiandae.
-    </p>
-  </div>
-  <div class="col-6 padded"> 
-    <form>
-        <label for="_name"> Your Name </label>
-        <input type="text" name="_name" id="_name" placeholder="Name" />
-        
-        <label for="_replyto"> Your Email </label>
-        <input type="email" name="_replyto" id="_replyto"  
-        placeholder="Email" />
-        
-        <label for="message"> Tell me everything about your pup... </label>
-        <textarea name="message" placeholder="I have a 3 year old golden retriever who loves..." rows="4"></textarea>
-        
-        <button type="submit" class="button"> SUBMIT </button> 
-      </form>
-  </div>
+    <!-- Contact form -->
+    <section class="grid bg-dark light-text padded">
+      <div class="col-6 padded">
+        <h2 class="editable">
+          Let's <span class="featured-text editable"> connect! </span>
+        </h2>
+        <p class="editable">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
+          accusamus veritatis esse sunt delectus tempore consequatur sint. Nam
+          minima sequi nobis voluptates fuga et id eaque enim dicta repudiandae.
+        </p>
+      </div>
+      <div class="col-6 padded">
+        <form>
+          <label for="_name"> Your Name </label>
+          <input type="text" name="_name" id="_name" placeholder="Name" />
 
-</section>
+          <label for="_replyto"> Your Email </label>
+          <input
+            type="email"
+            name="_replyto"
+            id="_replyto"
+            placeholder="Email"
+          />
 
-<!-- Gallery -->
-<section class="grid padded">
-  <div class="bg-image bg-happy col-6 tall-70">
-    <!--Background image pup 2-->
-  </div>
-  <div class="padded col-6-middle">
-    <h2 class="editable"> <span class="featured-text editable"> Header </span> </h2>
-    <p class="editable">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
-      accusamus veritatis esse sunt delectus tempore consequatur sint. Nam
-      minima sequi nobis voluptates fuga et id eaque enim dicta repudiandae.
-    </p>
-  </div>
-</section>
+          <label for="message"> Tell me everything about your pup... </label>
+          <textarea
+            name="message"
+            placeholder="I have a 3 year old golden retriever who loves..."
+            rows="4"
+          ></textarea>
 
-<!-- Icon Grid -->
-<section class="padded grid-center bg-light">
-  <div class="padded-sm col-12 text-center editable">
-    <h2> Need help <span class="featured-text"> deciding? </span> </h2>
-  </div>
-  <div class="padded-sm col-3 editable">
-    <i class="fas fa-dog"></i>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-    </p>
-  </div>
-  <div class="padded-sm col-3 editable">
-    <i class="fas fa-dog"></i>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-    </p>
-  </div>
-  <div class="padded-sm col-3 editable">
-    <i class="fas fa-dog"></i>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-    </p>
-  </div>
-</section>
+          <button type="submit" class="button">SUBMIT</button>
+        </form>
+      </div>
+    </section>
 
-<!-------------------- Testimonials section ---------------------->
-<section class="padded-lg grid text-center">
-  <div class="col-1 text-right">
-    <span class="quote-icon"> “ </span>
-  </div>
-  <div class="col-10 text-center">
-    <p class="medium-text font-weight-light editable">
-      I have so much more free time now that I don't have to walk my dog
-      twice a day.
-    </p>
-    <p class="subtitle editable">-A very happy customer</p>
-  </div>
-  <div class="col-1">
-    <span class="quote-icon"> " </span>
-  </div>
-</section>
+    <!-- Gallery -->
+    <section class="grid padded">
+      <div class="bg-image bg-happy col-6 tall-70">
+        <!--Background image pup 2-->
+      </div>
+      <div class="padded col-6-middle">
+        <h2 class="editable">
+          <span class="featured-text editable"> Header </span>
+        </h2>
+        <p class="editable">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
+          accusamus veritatis esse sunt delectus tempore consequatur sint. Nam
+          minima sequi nobis voluptates fuga et id eaque enim dicta repudiandae.
+        </p>
+      </div>
+    </section>
 
-<!-- Footer  -->
+    <!-- Icon Grid -->
+    <section class="padded grid-center bg-light">
+      <div class="padded-sm col-12 text-center editable">
+        <h2>Need help <span class="featured-text"> deciding? </span></h2>
+      </div>
+      <div class="padded-sm col-3 editable">
+        <i class="fas fa-dog"></i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="padded-sm col-3 editable">
+        <i class="fas fa-dog"></i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="padded-sm col-3 editable">
+        <i class="fas fa-dog"></i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </section>
+
+    <!-------------------- Testimonials section ---------------------->
+    <section class="padded-lg grid text-center">
+      <div class="col-1 text-right">
+        <span class="quote-icon"> “ </span>
+      </div>
+      <div class="col-10 text-center">
+        <p class="medium-text font-weight-light editable">
+          I have so much more free time now that I don't have to walk my dog
+          twice a day.
+        </p>
+        <p class="subtitle editable">-A very happy customer</p>
+      </div>
+      <div class="col-1">
+        <span class="quote-icon"> " </span>
+      </div>
+    </section>
+
+    <!-- Footer  -->
 
     <footer class="padded grid-spaceBetween bg-dark">
       <div class="col-5-bottom">
-        <h2 class="editable">Let's <span class="featured-text"> connect </span></h2>
+        <h2 class="editable">
+          Let's <span class="featured-text"> connect </span>
+        </h2>
         <p class="editable">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa
           sapiente eos quibusdam vel nulla ipsum veniam architecto, perferendis
@@ -155,11 +166,22 @@
         </p>
       </div>
       <div class="col-5-bottom">
-        <p class="editable"> <strong class="featured-text"> Call: </strong> <a href="tell:#"> 09233 7722 </a> </p>
-        <p class="editable"> <strong class="featured-text"> Email: </strong> <a href="mailto:#"> walkme@thedogwalker.co </a> </p>
-        <p class="editable"> <strong class="featured-text"> Office: </strong> 55 Main Street, Baltimore </p>
-        <p class="editable"> <strong class="featured-text"> Instagram: </strong> 
-          <a href="https://www.instagram.com/"> @thedogwalker </a> </p>
+        <p class="editable">
+          <strong class="featured-text"> Call: </strong>
+          <a href="tell:#"> 09233 7722 </a>
+        </p>
+        <p class="editable">
+          <strong class="featured-text"> Email: </strong>
+          <a href="mailto:#"> walkme@thedogwalker.co </a>
+        </p>
+        <p class="editable">
+          <strong class="featured-text"> Office: </strong> 55 Main Street,
+          Baltimore
+        </p>
+        <p class="editable">
+          <strong class="featured-text"> Instagram: </strong>
+          <a href="https://www.instagram.com/"> @thedogwalker </a>
+        </p>
       </div>
     </footer>
   </body>

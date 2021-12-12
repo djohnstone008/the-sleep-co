@@ -2,6 +2,9 @@
 <html>
   <!-- This is the head of our html where we add external resources and metadata-->
   <head>
+    <!-- Viewport meta for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>The Dog Walker</title>
 
     <!-------- This is our font-awesome icons------->
@@ -32,19 +35,17 @@
 
   <!-- This is the body, this is where all of your page content goes -->
   <body>
-
-  <!-- Linking another page  -->
-    
+    <!-- Linking another page  -->
 
     <!--------------- Header banner ------------------>
-    <header class="grid text-center tall-90">
-      <div class="col-12-top grid"> 
-        <div class="col-4-middle"> 
-          <a href="/index.html" class="logo"> 
-            <h2 class="featured-text"> The Dog Walker </h2>
+    <header class="grid text-center tall-90 md-tall-80">
+      <div class="col-12-top grid">
+        <div class="col-6_sm-12-middle sm-padded-b-0">
+          <a href="/index.html" class="logo">
+            <h2 class="featured-text">The Dog Walker</h2>
           </a>
         </div>
-        <nav class="col-8-middle text-right tab shadow">
+        <nav class="col-6_sm-12-middle text-right sm-text-center tab shadow">
           <a href="index.html"> Home </a>
           <a href="about.html"> About </a>
           <a href="products.html"> Products </a>
@@ -53,7 +54,8 @@
       </div>
       <div class="col-12">
         <h3 class="shadow xxl-text editable">
-          You have to <span class="featured-text"> walk </span> <br> before you can
+          You have to <span class="featured-text"> walk </span> <br />
+          before you can
           <span class="featured-text"> run! </span>
         </h3>
         <h1 class="font-weight-extra-bold shadow editable">The Dog Walker</h1>
@@ -62,8 +64,10 @@
 
     <!--------------- Gallery/ about section ------------------>
     <section class="grid">
-      <div class="padded col-6-middle">
-        <h2 class="editable">A <span class="featured-text"> tired </span> dog...</h2>
+      <div class="padded col-6_sm-12-middle">
+        <h2 class="editable">
+          A <span class="featured-text"> tired </span> dog...
+        </h2>
         <p class="editable">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
           accusamus veritatis esse sunt delectus.
@@ -76,14 +80,16 @@
           exercitationem est reiciendis consectetur quos.
         </p>
       </div>
-      <div class="bg-image bg-tired col-6 tall-70">
+      <div class="bg-image bg-tired col-6_sm-12 tall-70">
         <!--Background image pup 1-->
       </div>
-      <div class="bg-image bg-happy col-6 tall-70">
+      <div class="bg-image bg-happy col-6_sm-12 tall-70 hide-sm">
         <!--Background image pup 2-->
       </div>
-      <div class="padded col-6-middle">
-        <h2 class="editable">Is a <span class="featured-text editable"> happy </span> dog.</h2>
+      <div class="padded col-6_sm-12-middle">
+        <h2 class="editable">
+          Is a <span class="featured-text editable"> happy </span> dog.
+        </h2>
         <p class="editable">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa
           accusamus veritatis esse sunt delectus tempore consequatur sint. Nam
@@ -97,7 +103,7 @@
       <div class="padded-sm col-12 text-center editable">
         <h2>Service you can <span class="featured-text"> rely </span> on</h2>
       </div>
-      <div class="padded-sm col-3 editable">
+      <div class="padded-sm col-3_sm-6 xxs-stack editable">
         <i class="fas fa-dog"></i>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -106,7 +112,7 @@
           incidunt quia ipsa.
         </p>
       </div>
-      <div class="padded-sm col-3 editable">
+      <div class="padded-sm col-3_sm-6 xxs-stack editable">
         <i class="fas fa-dog"></i>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -115,7 +121,7 @@
           incidunt quia ipsa.
         </p>
       </div>
-      <div class="padded-sm col-3 editable">
+      <div class="padded-sm col-3_sm-6 xxs-stack editable">
         <i class="fas fa-dog"></i>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -124,7 +130,7 @@
           incidunt quia ipsa.
         </p>
       </div>
-      <div class="padded-sm col-3 editable">
+      <div class="padded-sm col-3_sm-6 xxs-stack editable">
         <i class="fas fa-dog"></i>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -137,10 +143,11 @@
     <!-------------------- Image banner ---------------------->
     <section class="padded text-center bg-pug tall-70 grid">
       <div class="col-12 big-text tall-70">
-       <h3 class="editable">  Make sure your dog gets the 
-         <span class="white-text"> love </span> 
-         and <span class="white-text"> care </span> it needs.
-       </h3>
+        <h3 class="editable">
+          Make sure your dog gets the
+          <span class="white-text"> love </span>
+          and <span class="white-text"> care </span> it needs.
+        </h3>
       </div>
     </section>
 
@@ -163,7 +170,9 @@
     <!-------------------- Footer ---------------------->
     <footer class="padded grid-spaceBetween bg-dark">
       <div class="col-5-bottom">
-        <h2 class="editable">Let's <span class="featured-text"> connect </span></h2>
+        <h2 class="editable">
+          Let's <span class="featured-text"> connect </span>
+        </h2>
         <p class="editable">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa
           sapiente eos quibusdam vel nulla ipsum veniam architecto, perferendis
@@ -172,11 +181,22 @@
         </p>
       </div>
       <div class="col-5-bottom">
-        <p class="editable"> <strong class="featured-text"> Call: </strong> <a href="tell:#"> 09233 7722 </a> </p>
-        <p class="editable"> <strong class="featured-text"> Email: </strong> <a href="mailto:#"> walkme@thedogwalker.co </a> </p>
-        <p class="editable"> <strong class="featured-text"> Office: </strong> 55 Main Street, Baltimore </p>
-        <p class="editable"> <strong class="featured-text"> Instagram: </strong> 
-          <a href="https://www.instagram.com/"> @thedogwalker </a> </p>
+        <p class="editable">
+          <strong class="featured-text"> Call: </strong>
+          <a href="tell:#"> 09233 7722 </a>
+        </p>
+        <p class="editable">
+          <strong class="featured-text"> Email: </strong>
+          <a href="mailto:#"> walkme@thedogwalker.co </a>
+        </p>
+        <p class="editable">
+          <strong class="featured-text"> Office: </strong> 55 Main Street,
+          Baltimore
+        </p>
+        <p class="editable">
+          <strong class="featured-text"> Instagram: </strong>
+          <a href="https://www.instagram.com/"> @thedogwalker </a>
+        </p>
       </div>
     </footer>
   </body>

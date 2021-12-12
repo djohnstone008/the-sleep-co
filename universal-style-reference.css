@@ -1,6 +1,4 @@
-
-
- /*
+/*
   Colors: 
   Yellow: #FFBE00
   Navy: #192B37
@@ -13,116 +11,234 @@
   box-sizing: border-box;
 }
 /*----------------------- Universal Styles and Utility classes----------------- */
-/* Padding Utility Classes */ 
-.padded-sm { padding: 2.5%; }
-.padded    { padding: 5%;   }
-.padded-lg { padding: 10%;  }
-
-.padded-05 { padding: 0.5rem; }
-.padded-1  { padding: 1rem; }
-.padded-2  { padding: 2rem; }
-
-.padded-t  { padding-top: 5%; }
-.padded-b  { padding-bottom: 5%; }
-.padded-l  { padding-left: 5%; }
-.padded-r  { padding-right: 5%; }
-
-.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
-.padded-lr  { padding-left: 5%; padding-right: 5%; }
-
-.padded-t-1 { padding-top: 1rem; }
-.padded-b-1 { padding-bottom: 1rem; }
-.padded-l-1 { padding-left: 1rem; }
-.padded-r-1 { padding-right: 1rem; }
-
-.padded-t-2 { padding-top: 2rem; }
-.padded-b-2 { padding-bottom: 2rem; }
-.padded-l-2 { padding-left: 2rem; }
-.padded-r-2 { padding-right: 2rem; }
-
-.padded-t-0 { padding-top: 0; }
-.padded-b-0 { padding-bottom: 0; }
-.padded-l-0 { padding-left: 0; }
-.padded-r-0 { padding-right: 0; }
-
-/* --------------- Margin Utility Classes -----------------*/ 
-
-.margin-t { margin-top: 5%; }
-.margin-b { margin-bottom: 5%; }
-.margin-l { margin-left: 5%; }
-.margin-r { margin-right: 5%; }
-
-.margin-t-1 { margin-top: 1rem; }
-.margin-b-1 { margin-bottom: 1rem; }
-.margin-l-1 { margin-left: 1rem; }
-.margin-r-1 { margin-right: 1rem; }
-
-.margin-t-2 { margin-top: 2rem; }
-.margin-b-2 { margin-bottom: 2rem; }
-.margin-l-2 { margin-left: 2rem; }
-.margin-r-2 { margin-right: 2rem; }
-
-.margin-t-0 { margin-top: 0; }
-.margin-b-0 { margin-bottom: 0; }
-.margin-l-0 { margin-left: 0; }
-.margin-r-0 { margin-right: 0; }
-
-.margin-tb { margin-top: 5%; margin-bottom: 5%; }
-.margin-lr { margin-left: 5%; margin-right: 5%; }
-
-/* Typography Styles */
-.text-left    { text-align: left; }
-.text-right   { text-align: right; }
-.text-center  { text-align: center; }
-
-body {
-  font-family: "Arial", sans-serif;  /* Add your font here */ 
+/* Padding Utility Classes */
+.padded-sm {
+  padding: 2.5%;
+}
+.padded {
+  padding: 5%;
+}
+.padded-lg {
+  padding: 10%;
 }
 
-h2, h3, h4, h5, h6 {
+.padded-05 {
+  padding: 0.5rem;
+}
+.padded-1 {
+  padding: 1rem;
+}
+.padded-2 {
+  padding: 2rem;
+}
+
+.padded-t {
+  padding-top: 5%;
+}
+.padded-b {
+  padding-bottom: 5%;
+}
+.padded-l {
+  padding-left: 5%;
+}
+.padded-r {
+  padding-right: 5%;
+}
+
+.padded-tb {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.padded-lr {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.padded-t-1 {
+  padding-top: 1rem;
+}
+.padded-b-1 {
+  padding-bottom: 1rem;
+}
+.padded-l-1 {
+  padding-left: 1rem;
+}
+.padded-r-1 {
+  padding-right: 1rem;
+}
+
+.padded-t-2 {
+  padding-top: 2rem;
+}
+.padded-b-2 {
+  padding-bottom: 2rem;
+}
+.padded-l-2 {
+  padding-left: 2rem;
+}
+.padded-r-2 {
+  padding-right: 2rem;
+}
+
+.padded-t-0 {
+  padding-top: 0;
+}
+.padded-b-0 {
+  padding-bottom: 0;
+}
+.padded-l-0 {
+  padding-left: 0;
+}
+.padded-r-0 {
+  padding-right: 0;
+}
+
+/* --------------- Margin Utility Classes -----------------*/
+
+.margin-t {
+  margin-top: 5%;
+}
+.margin-b {
+  margin-bottom: 5%;
+}
+.margin-l {
+  margin-left: 5%;
+}
+.margin-r {
+  margin-right: 5%;
+}
+
+.margin-t-1 {
+  margin-top: 1rem;
+}
+.margin-b-1 {
+  margin-bottom: 1rem;
+}
+.margin-l-1 {
+  margin-left: 1rem;
+}
+.margin-r-1 {
+  margin-right: 1rem;
+}
+
+.margin-t-2 {
+  margin-top: 2rem;
+}
+.margin-b-2 {
+  margin-bottom: 2rem;
+}
+.margin-l-2 {
+  margin-left: 2rem;
+}
+.margin-r-2 {
+  margin-right: 2rem;
+}
+
+.margin-t-0 {
+  margin-top: 0;
+}
+.margin-b-0 {
+  margin-bottom: 0;
+}
+.margin-l-0 {
+  margin-left: 0;
+}
+.margin-r-0 {
+  margin-right: 0;
+}
+
+.margin-tb {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.margin-lr {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Typography Styles */
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+body {
+  font-family: "Arial", sans-serif; /* Add your font here */
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.1;
   margin-bottom: 1.2rem;
 }
 
 p {
-  line-height: 1.4; 
+  line-height: 1.4;
   margin-bottom: 1rem;
 }
 
-h2:last-child, 
-h3:last-child, 
-h4:last-child, 
-h5:last-child, 
-h6:last-child, 
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
 p:last-child {
-	margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 /* ---------------- Background and Image Styles ---------------*/
-.bg-dark { 
-  background-color: rgb(60,60,65); 
+.bg-dark {
+  background-color: rgb(60, 60, 65);
   color: white;
 }
 
-.bg-featured { background-color: lightblue; }
-.bg-light { background-color: rgb(245,245,245); }
+.bg-featured {
+  background-color: lightblue;
+}
+.bg-light {
+  background-color: rgb(245, 245, 245);
+}
 
 .bg-image {
-  background-color: grey; /* Set a fall-back color while images are loading */ 
+  background-color: grey; /* Set a fall-back color while images are loading */
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
-.landscape     { padding-bottom: 66%;  }
-.portrait-tall { padding-bottom: 175%; }
-.portrait      { padding-bottom: 125%; }
-.square        { padding-bottom: 100%; }
-
+.landscape {
+  padding-bottom: 66%;
+}
+.portrait-tall {
+  padding-bottom: 175%;
+}
+.portrait {
+  padding-bottom: 125%;
+}
+.square {
+  padding-bottom: 100%;
+}
 
 /* Background Position */
-.bg-pos-t { background-position: top; }
-.bg-pos-b { background-position: bottom; }
-.bg-pos-l { background-position: left; }
-.bg-pos-r { background-position: right; }
+.bg-pos-t {
+  background-position: top;
+}
+.bg-pos-b {
+  background-position: bottom;
+}
+.bg-pos-l {
+  background-position: left;
+}
+.bg-pos-r {
+  background-position: right;
+}
