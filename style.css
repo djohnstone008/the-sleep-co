@@ -331,29 +331,65 @@ textarea:focus {
     border: 2px solid blue;
   }
 
-  html { font-size: 14px; }
-  p { font-size: 1.1rem; }
+  html {
+    font-size: 14px;
+  }
+  p {
+    font-size: 1.1rem;
+  }
 
-  .show-sm {display: block;}
-  .hide-sm {display: none;}
+  .show-sm {
+    display: block;
+  }
+  .hide-sm {
+    display: none;
+  }
 
-  .sm-text-center {text-align: center;}
-  .sm-text-left {text-align: left;}
-  .sm-text-right {text-align: right;}
+  .sm-text-center {
+    text-align: center;
+  }
+  .sm-text-left {
+    text-align: left;
+  }
+  .sm-text-right {
+    text-align: right;
+  }
 
-  .sm-padded {padding: 5%;}
-  .sm-padded-1 {padding: 1rem;}
-  .sm-padded-05 {padding: 0.5rem;}
+  .sm-padded {
+    padding: 5%;
+  }
+  .sm-padded-1 {
+    padding: 1rem;
+  }
+  .sm-padded-05 {
+    padding: 0.5rem;
+  }
 
-  .sm-padded-t-0 {padding-top: 0;}
-  .sm-padded-b-0 {padding-bottom: 0;}
-  .sm-padded-l-0 {padding-left: 0;}
-  .sm-padded-r-0 {padding-right: 0;}
+  .sm-padded-t-0 {
+    padding-top: 0;
+  }
+  .sm-padded-b-0 {
+    padding-bottom: 0;
+  }
+  .sm-padded-l-0 {
+    padding-left: 0;
+  }
+  .sm-padded-r-0 {
+    padding-right: 0;
+  }
 
-  .sm-margin-t-0 {margin-top: 0;}
-  .sm-margin-b-0 {margin-bottom: 0;}
-  .sm-margin-l-0 {margin-left: 0;}
-  .sm-margin-r-0 {margin-right: 0;}
+  .sm-margin-t-0 {
+    margin-top: 0;
+  }
+  .sm-margin-b-0 {
+    margin-bottom: 0;
+  }
+  .sm-margin-l-0 {
+    margin-left: 0;
+  }
+  .sm-margin-r-0 {
+    margin-right: 0;
+  }
 
   .logo h2 {
     font-size: 2rem;
@@ -371,6 +407,8 @@ textarea:focus {
     border: 2px solid orange;
   }
 
+  .flex-flip-xs { flex-direction: column-reverse; }
+
   .show-xs {
     display: block;
   }
@@ -383,7 +421,9 @@ textarea:focus {
     line-height: 1.1;
   }
 
-  h2 { font-size: 2rem; }
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 /* ------- XXS Media Query (36em / 400px) --------------- */
@@ -391,8 +431,9 @@ textarea:focus {
 /* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */
 /* To calculate em, divide px by 16 ie. 400/16 = 25 */
 @media (max-width: 25em) {
-
-  html { font-size: 12px; }
+  html {
+    font-size: 12px;
+  }
 
   [class*="grid"] .xxs-stack {
     flex-basis: 100%;
