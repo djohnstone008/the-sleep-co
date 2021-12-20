@@ -203,6 +203,7 @@ header {
   background-repeat: no-repeat;
   padding: 1% 5%;
 }
+
 header h3 {
   font-size: 5.5rem;
   line-height: 1;
@@ -217,6 +218,7 @@ nav a {
 .logo h2 {
   margin-bottom: 0;
 }
+
 
 footer a {
   border: none;
@@ -407,7 +409,9 @@ textarea:focus {
     border: 2px solid orange;
   }
 
-  .flex-flip-xs { flex-direction: column-reverse; }
+  .flex-flip-xs {
+    flex-direction: column-reverse;
+  }
 
   .show-xs {
     display: block;
@@ -440,4 +444,3 @@ textarea:focus {
     max-width: 100%;
   }
 }
-
