@@ -14,9 +14,9 @@
 
 /*image styles*/
 .bg-image {
-  background-image: url("/images/the-sleep-co\ pup\ 1\ \(4\).jpg");
+  background-image: url("/images/dogs\ playing.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: norepeat;
 }
 
 .landscape {
