@@ -1,0 +1,446 @@
+/* 
+  Colors: 
+  Yellow: #FFBE00
+  Navy: #192B37
+*/
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*-----Universal Styles and Utility classes------ */
+
+/*image styles*/
+.bg-image {
+  background-image: url("/images/dogs\ playing.jpg");
+  background-size: cover;
+  background-repeat: norepeat;
+}
+
+.landscape {
+  padding-bottom: 65%;
+}
+.portrait {
+  padding-bottom: 125%;
+}
+.square {
+  padding-bottom: 100%;
+}
+
+.padded {
+  padding: 5%;
+}
+.padded-sm {
+  padding: 1rem;
+}
+.padded-xs {
+  padding: 0.5rem;
+}
+.padded-lg {
+  padding: 10%;
+}
+
+.margin-1 {
+  margin-right: 1rem;
+}
+.margin-top {
+  margin-top: 1rem;
+}
+
+.bg-dark {
+  background-color: #192b37;
+  color: white;
+}
+.bg-light {
+  background-color: #e3ecf2;
+}
+
+.tall-50 {
+  min-height: 50vh;
+}
+.tall-60 {
+  min-height: 60vh;
+}
+.tall-70 {
+  min-height: 70vh;
+}
+.tall-80 {
+  min-height: 80vh;
+}
+.tall-90 {
+  min-height: 90vh;
+}
+.tall-100 {
+  min-height: 100vh;
+}
+
+/* Typography Styles */
+body {
+  font-family: "catamaran", san-serif;
+  color: #192b37;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+a:hover {
+  color: #ffbe00;
+}
+
+/* Specific typography classes */
+.font-weight-light {
+  font-weight: 200;
+}
+.font-weight-normal {
+  font-weight: normal;
+}
+.font-weight-extra-bold {
+  font-weight: 800;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.featured-text {
+  color: #ffbe00;
+}
+.white-text {
+  color: white;
+}
+
+.small-text {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.medium-text {
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+.big-text {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.xxl-text {
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: rgb(120, 120, 125);
+}
+
+.shadow {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.tab {
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+/*Font awesome icons -----------*/
+.fas,
+.fab {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/*Header and footer styles*/
+header {
+  background-image: url("Images/dog\ walking\ sunflowers\ header\ .jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1% 5%;
+}
+
+header h3 {
+  font-size: 5.5rem;
+  line-height: 1;
+}
+
+nav a {
+  padding: 0.5rem;
+  display: inline-block;
+  border: none;
+}
+
+.logo h2 {
+  margin-bottom: 0;
+}
+
+
+footer a {
+  border: none;
+}
+/*Background images*/
+.bg-featured {
+  background-color: #f4b525;
+}
+
+.bg-tired {
+  background-image: url("/Images/the-sleep-co\ pup\ 1\ \(4\).jpg");
+}
+.bg-happy {
+  background-image: url("/Images/the-sleep-co\ pup\ 5\ \(3\).jpg");
+  background-position: 50% 60%;
+}
+.bg-pug {
+  background-image: url("/Images/pug\ photo-1517849845537-4d257902454a.jpg");
+  background-repeat: repeat-x;
+  background-position: 50% 60%;
+}
+
+.bg-lying {
+  background-image: url("/Images/the-sleep-co\ dog\ lying\ in\ grass.jpg");
+  background-position: 50%;
+}
+
+.bg-grass {
+  background-image: url("/Images/the-sleep-co\ grass.jpg");
+  background-position: 50% 60%;
+}
+
+.bg-playing {
+  background-image: url("/Images/dogs\ playing.jpg");
+  background-position: cover;
+}
+
+/* Buttons and forms */
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  /* Default border to prevent page from jumping when you click */
+  border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #ffbe00;
+  outline: none;
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  background-color: #ffbe00;
+  appearance: none;
+  border: 2px solid #ffbe00;
+  color: inherit;
+}
+
+.button:hover {
+  color: white;
+}
+
+/* Testimonials section -------- */
+.quote-icon {
+  font-size: 6rem;
+  display: inline-block;
+  color: rgb(120, 120, 125);
+  line-height: 1;
+}
+
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */
+
+.show-xs,
+.show-sm,
+.show-md {
+  display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */
+
+@media (max-width: 64em) {
+  body {
+    border: 2px solid green;
+    padding: 0.5rem;
+  }
+
+  .show-md {
+    display: block;
+  }
+  .hide-md {
+    display: none;
+  }
+
+  .md-tall-80 {
+    min-height: 80vh;
+  }
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */
+
+@media (max-width: 48em) {
+  body {
+    border: 2px solid blue;
+  }
+
+  html {
+    font-size: 14px;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+
+  .show-sm {
+    display: block;
+  }
+  .hide-sm {
+    display: none;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+  .sm-text-left {
+    text-align: left;
+  }
+  .sm-text-right {
+    text-align: right;
+  }
+
+  .sm-padded {
+    padding: 5%;
+  }
+  .sm-padded-1 {
+    padding: 1rem;
+  }
+  .sm-padded-05 {
+    padding: 0.5rem;
+  }
+
+  .sm-padded-t-0 {
+    padding-top: 0;
+  }
+  .sm-padded-b-0 {
+    padding-bottom: 0;
+  }
+  .sm-padded-l-0 {
+    padding-left: 0;
+  }
+  .sm-padded-r-0 {
+    padding-right: 0;
+  }
+
+  .sm-margin-t-0 {
+    margin-top: 0;
+  }
+  .sm-margin-b-0 {
+    margin-bottom: 0;
+  }
+  .sm-margin-l-0 {
+    margin-left: 0;
+  }
+  .sm-margin-r-0 {
+    margin-right: 0;
+  }
+
+  .logo h2 {
+    font-size: 2rem;
+  }
+  header h3 {
+    font-size: 11vw;
+  }
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */
+
+@media (max-width: 36em) {
+  body {
+    border: 2px solid orange;
+  }
+
+  .flex-flip-xs {
+    flex-direction: column-reverse;
+  }
+
+  .show-xs {
+    display: block;
+  }
+  .hide-xs {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ------- XXS Media Query (36em / 400px) --------------- */
+/* NOT USUALLY REQUIRED ,,, smallest device size = iphone 5 = 320px wide */
+/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */
+/* To calculate em, divide px by 16 ie. 400/16 = 25 */
+@media (max-width: 25em) {
+  html {
+    font-size: 12px;
+  }
+
+  [class*="grid"] .xxs-stack {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
