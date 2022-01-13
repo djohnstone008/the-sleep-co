@@ -2,21 +2,11 @@
 layout: default
 ---
     <!--------------- Header banner ------------------>
-    <header class="grid text-center tall-90 md-tall-80">
-      <div class="col-12-top grid">
-        <div class="col-6_sm-12-middle sm-padded-b-0">
-          <a href="/index.html" class="logo">
-            <h2 class="featured-text">The Dog Walker</h2>
-          </a>
-        </div>
-        <nav class="col-6_sm-12-middle text-right sm-text-center tab shadow">
-          <a href="index.html"> Home </a>
-          <a href="about.html"> About </a>
-          <a href="products.html"> Products </a>
-          <a href="contact.html"> Contact </a>
-        </nav>
-      </div>
-      <div class="col-12">
+    <header class="grid tall-90 md-tall-80">
+
+      {% include header-nav.html %}
+
+      <div class="col-12 text-center">
         <h3 class="shadow xxl-text editable">
           You have to <span class="featured-text"> walk </span> <br />
           before you can
