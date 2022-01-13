@@ -1,5 +1,17 @@
 ---
 layout: default
+featured: 
+  - icon: fas fa-dog
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+    provident quas similique dolorum facere, amet repellat a? Harum
+    eveniet magnam similique a sequi, est quo repellendus obcaecati
+    incidunt quia ipsa.
+  - icon: 
+    description:
+  - icon: 
+    description:
+  - icon: 
+    description:
 ---
     <!--------------- Header banner ------------------>
     <header class="grid tall-90 md-tall-80">
@@ -57,42 +69,14 @@ layout: default
       <div class="padded-sm col-12 text-center editable">
         <h2>Service you can <span class="featured-text"> rely </span> on</h2>
       </div>
+<!------ Jekyll loop  ------->
+      {% for item in page.featured %}
       <div class="padded-sm col-3_sm-6 xxs-stack editable">
-        <i class="fas fa-dog"></i>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          provident quas similique dolorum facere, amet repellat a? Harum
-          eveniet magnam similique a sequi, est quo repellendus obcaecati
-          incidunt quia ipsa.
-        </p>
+        <i class="{{item.icon}}"></i>
+        <p> {{item.description}} </p>
       </div>
-      <div class="padded-sm col-3_sm-6 xxs-stack editable">
-        <i class="fas fa-dog"></i>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          provident quas similique dolorum facere, amet repellat a? Harum
-          eveniet magnam similique a sequi, est quo repellendus obcaecati
-          incidunt quia ipsa.
-        </p>
-      </div>
-      <div class="padded-sm col-3_sm-6 xxs-stack editable">
-        <i class="fas fa-dog"></i>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          provident quas similique dolorum facere, amet repellat a? Harum
-          eveniet magnam similique a sequi, est quo repellendus obcaecati
-          incidunt quia ipsa.
-        </p>
-      </div>
-      <div class="padded-sm col-3_sm-6 xxs-stack editable">
-        <i class="fas fa-dog"></i>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          provident quas similique dolorum facere, amet repellat a? Harum
-          eveniet magnam similique a sequi, est quo repellendus obcaecati
-          incidunt quia ipsa.
-        </p>
-      </div>
+      {% endfor %}
+      
     </section>
     <!-------------------- Image banner ---------------------->
     <section class="padded text-center bg-pug tall-70 grid">

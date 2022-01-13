@@ -1,57 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <!-- This is the head of our html where we add external resources and metadata-->
-  <head>
-
-    <!-- Viewport meta for responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>About The Dog Walker</title>
-
-    <!-------- This is our font-awesome icons------->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-------- Gridlex for our flexbox grids------->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"
-    />
-
-    <!-------- Google-font: catamaran (200,400,500,800) ------->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-------- This is our custom stylesheet------->
-    <link href="/style.css" rel="stylesheet" />
-  </head>
-
-  <!-- This is the body, this is where all of your page content goes -->
-  <body>
+---
+layout: default
+---
     <!--------------- Header banner ------------------>
-    <header class="grid text-center tall-90 bg-grass">
-      <div class="col-12-top grid">
-        <div class="col-6_sm-12-middle sm-padded-b-0">
-          <a href="/index.html" class="logo">
-            <h2 class="featured-text">The Dog Walker</h2>
-          </a>
-        </div>
-        <nav class="col-6_sm-12-middle text-right sm-text-center tab shadow">
-          <a href="index.html"> Home </a>
-          <a href="about.html"> About </a>
-          <a href="products.html"> Products </a>
-          <a href="contact.html"> Contact </a>
-        </nav>
-      </div>
-      <div class="col-12">
+    <header class="grid tall-90 bg-grass">
+
+      {% include header-nav.html %}
+
+      <div class="col-12 text-center">
         <h3 class="shadow xxl-text editable">
           Why <span class="featured-text"> wait? </span>
         </h3>
@@ -150,63 +105,3 @@
         <span class="quote-icon"> " </span>
       </div>
     </section>
-
-    <!-- Footer  -->
-
-    <footer class="padded grid-spaceBetween bg-dark">
-      <div class="col-5-bottom">
-        <h2 class="editable">
-          Let's <span class="featured-text"> connect </span>
-        </h2>
-        <p class="editable">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa
-          sapiente eos quibusdam vel nulla ipsum veniam architecto, perferendis
-          praesentium debitis laborum laudantium possimus iusto asperiores
-          quaerat natus. Ad, magnam!
-        </p>
-      </div>
-      <div class="col-5-bottom">
-        <p class="editable">
-          <strong class="featured-text"> Call: </strong>
-          <a href="tell:#"> 09233 7722 </a>
-        </p>
-        <p class="editable">
-          <strong class="featured-text"> Email: </strong>
-          <a href="mailto:#"> walkme@thedogwalker.co </a>
-        </p>
-        <p class="editable">
-          <strong class="featured-text"> Office: </strong> 55 Main Street,
-          Baltimore
-        </p>
-        <p class="editable">
-          <strong class="featured-text"> Instagram: </strong>
-          <a href="https://www.instagram.com/"> @thedogwalker </a>
-        </p>
-      </div>
-    </footer>
-
-            <!-- From getbutton.io -->
-            <!-- Place in html at the bottom just before </body> -->
-
-            <!-- GetButton.io widget -->
-            <script type="text/javascript">
-              (function () {
-                  var options = {
-                      whatsapp: "+625555555555", // WhatsApp number
-                      email: "hello@mycompany.com", // Email
-                      call_to_action: "Message us", // Call to action
-                      button_color: "#FF6550", // Color of button
-                      position: "right", // Position may be 'right' or 'left'
-                      order: "whatsapp,email", // Order of buttons
-                      pre_filled_message: "Hey, I'm messaging from your website...", // WhatsApp pre-filled message
-                  };
-                  var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-                  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-                  s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-                  var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-              })();
-            </script>
-            <!-- /GetButton.io widget -->
-
-  </body>
-</html>
