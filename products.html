@@ -1,5 +1,15 @@
 ---
 layout: default
+cards: 
+  - heading: Small Heading
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim provident quas similique dolorum facere, amet repellat a? Harum eveniet magnam similique a sequi, est quo repellendus obcaecati incidunt quia ipsa.
+    featured_image: /images/dogs\ playing.jpg
+  - heading: Small Heading
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim provident quas similique dolorum facere, amet repellat a? Harum eveniet magnam similique a sequi, est quo repellendus obcaecati incidunt quia ipsa.
+    featured_image: /Images/the-sleep-co\ pup\ 1\ \(4\).jpg
+  - heading: Small Heading
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim provident quas similique dolorum facere, amet repellat a? Harum eveniet magnam similique a sequi, est quo repellendus obcaecati incidunt quia ipsa.
+    featured_image: /Images/the-sleep-co\ pup\ 5\ \(3\).jpg
 ---
     <!--------------- Header banner ------------------>
     <header class="grid tall-80 bg-playing">
@@ -61,48 +71,21 @@ layout: default
 
 <!-- Cards -->
 <section class="grid padded"> 
+
+  {% for item in page.cards %}
+
   <div class="col-4_sm-12 padded-sm"> 
     <div class="card"> 
-      <div class="bg-image portrait"> </div>
+      <!-- hard coding css styles into html for specific element. Can add multiple styles seperated by ; Be sure to use _image to make compatible with cloudcannon.  -->
+      <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"> </div>
         <div class="padded-1">
-          <h3 class="margin-top"> Little Heading </h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-            provident quas similique dolorum facere, amet repellat a? Harum
-            eveniet magnam similique a sequi, est quo repellendus obcaecati
-            incidunt quia ipsa.
-          </p>
+          <h3 class="margin-top"> {{item.heading}} </h3>
+          <p> {{item.description}} </p>
         </div>
     </div>
   </div>
-  <div class="col-4_sm-12 padded-sm"> 
-    <div class="card"> 
-      <div class="bg-image portrait"> </div>
-        <div class="padded-1">
-          <h3 class="margin-top"> Little Heading </h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-            provident quas similique dolorum facere, amet repellat a? Harum
-            eveniet magnam similique a sequi, est quo repellendus obcaecati
-            incidunt quia ipsa.
-          </p>
-        </div>
-    </div>
-  </div>
-  <div class="col-4_sm-12 padded-sm"> 
-    <div class="card"> 
-      <div class="bg-image portrait"> </div>
-        <div class="padded-1">
-          <h3 class="margin-top"> Little Heading </h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-            provident quas similique dolorum facere, amet repellat a? Harum
-            eveniet magnam similique a sequi, est quo repellendus obcaecati
-            incidunt quia ipsa.
-          </p>
-        </div>
-    </div>
-  </div>
+  {% endfor %}
+  
 </section>
 
 <!-- Image Banner -->
