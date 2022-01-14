@@ -301,7 +301,8 @@ textarea:focus {
 
 .show-xs,
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
   display: none;
 }
 
