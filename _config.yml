@@ -1,4 +1,4 @@
-# configuring user interface for cloud-cannon 
+# new FILE for configuring user interface for cloud-cannon-- settings for jekyll that cloudcannon can read 
 # singular in .html (ie. aspect-ratio) plural in .yml (ie. aspect ratios). 
 
 _select_data:
