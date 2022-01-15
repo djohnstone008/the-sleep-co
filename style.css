@@ -12,13 +12,6 @@
 }
 /*-----Universal Styles and Utility classes------ */
 
-/*image styles*/
-.bg-image {
-  background-image: url("/images/dogs\ playing.jpg");
-  background-size: cover;
-  background-repeat: norepeat;
-}
-
 .landscape {
   padding-bottom: 65%;
 }
@@ -283,6 +276,33 @@ footer a {
   background-image: url("/Images/dogs\ playing.jpg");
   background-position: cover;
 }
+
+/* Image Gallery */
+.gallery [class*="col-"] {
+  padding: 0.5%;
+}
+
+/*image styles*/
+.bg-image {
+  background-image: url("/images/dogs\ playing.jpg");
+  background-size: cover;
+  background-repeat: norepeat;
+  background-color: rgb(240,240,240);
+  background-position: center; 
+}
+
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 /* Buttons and forms */
 
