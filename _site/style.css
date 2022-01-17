@@ -253,7 +253,7 @@ footer a {
   background-image: url("/Images/the-sleep-co\ pup\ 1\ \(4\).jpg");
 }
 .bg-happy {
-  background-image: url("/Images/the-sleep-co\ pup\ 5\ \(3\).jpg");
+  background-image: url("/Images/the-sleep-co\ pup\ 3\ \(1\).jpg");
   background-position: 50% 60%;
 }
 .bg-pug {
@@ -280,6 +280,23 @@ footer a {
 /* Image Gallery */
 .gallery [class*="col-"] {
   padding: 0.5%;
+}
+
+.gallery .gallery-item {
+  border-bottom: none;
+}
+
+/* background of gallery when active */
+.lg-backdrop {
+  background-color: rgb(60,60,60);
+}
+
+.lg-backdrop.ln {
+ opacity: 0.9;
+}
+
+.lg-sub-html {
+  background-color: rgb(60,60,60,0.9);
 }
 
 /*image styles*/
