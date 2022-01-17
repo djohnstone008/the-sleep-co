@@ -1,16 +1,16 @@
 ---
 layout: default
-gallery: 
+gallery:
   - column-size: col-6
     aspect-ratio: square
     background_image: /Images/the-sleep-co\ grass.jpg
-    gallery: 
+    gallery:
   - column-size: col-6
     aspect-ratio: square
     background_image: /Images/the-sleep-co\ pup\ 5\ \(3\).jpg
-    gallery: 
+    gallery:
   - column-size: col-12
-    aspect-ratio: landscape
+    aspect-ratio: portrait-tall
     background_image: /Images/the-sleep-co\ dog\ lying\ in\ grass.jpg
   - column-size: col-4
     aspect-ratio: square
@@ -43,8 +43,7 @@ gallery:
 {% for item in page.gallery %}
 
     <div class="{{item.column-size}}">
-      <div class="bg-image {{item.aspect-ratio}}" 
-           style="background-image: url('{{item.background_image}}');">
+      <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
       </div>
     </div> 
 
