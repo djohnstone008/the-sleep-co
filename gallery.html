@@ -1,26 +1,32 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: Dark Background
 gallery:
   - column-size: col-6
     aspect-ratio: square
     background_image: /Images/the-sleep-co\ grass.jpg
-    gallery:
+    type: dog
   - column-size: col-6
     aspect-ratio: square
     background_image: /Images/the-sleep-co\ pup\ 5\ \(3\).jpg
-    gallery:
+    type: dog
   - column-size: col-12
     aspect-ratio: landscape
     background_image: /Images/the-sleep-co\ dog\ lying\ in\ grass.jpg
+    type: dog
   - column-size: col-4
     aspect-ratio: square
     background_image: /Images/pug\ photo-1517849845537-4d257902454a.jpg
+    type: dog
   - column-size: col-4
     aspect-ratio: square
     background_image: /Images/the-sleep-co\ pup\ 1\ \(4\).jpg
+    type: cat
   - column-size: col-4
     aspect-ratio: square
     background_image: /Images/pug\ photo-1517849845537-4d257902454a.jpg
+    type: rabbit
 ---
 
 <!--------------- Header banner ------------------>
@@ -36,55 +42,63 @@ gallery:
   </div>
 </header>
 
-<section class="padded"> 
+{% if page.popup-gallery == true %}
 
+<section class="padded
+  {% if page.gallery-background == 'Dark Background' %} bg-dark {% endif %}
+"> 
   <!------- Popup Gallery  ------->
   <h2> Popup Gallery </h2>
   <div class="gallery grid" id="lightgallery">
 
     {% for item in page.gallery %}
+
+    <!-- For filtering images, client-friendly -->
+    <!-- {% if item.type == 'dog' or item.type == 'cat' or item.type == 'rabbit' %} -->
     
         <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
           <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
           </div>
         </a> 
+    <!-- {% endif %} -->
+    {% endfor %}
     
-        {% endfor %}
-    
-      </div>
+  </div>
 
 
 
-      <div class="gallery grid" id="lightgallery-2">
+  <div class="gallery grid" id="lightgallery-2">
         
-            <a class="button" href="/Images/the-sleep-co\ grass.jpg">
-              View Our Work
-            </a> 
-            <a href="/Images/the-sleep-co\ pup\ 3\ \(1\).jpg" title="Dog 1"></a>
-            <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 2"></a>
-            <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 3"></a>
-            <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 4"></a>
-            <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 5"></a>
-            <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 6"></a>
+    <a class="button" href="/Images/the-sleep-co\ grass.jpg">
+      View Our Work
+    </a> 
+    <a href="/Images/the-sleep-co\ pup\ 3\ \(1\).jpg" title="Dog 1"></a>
+    <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 2"></a>
+    <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 3"></a>
+    <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 4"></a>
+    <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 5"></a>
+    <a href="/Images/the-sleep-co\ grass.jpg" title="Dog 6"></a>
         
-          </div>
+  </div>
 
 
 </section>
+
+{% else %}
 
   <!------- Standard Gallery  ------->
 <section class="padded"> 
   <h2> Standard Gallery </h2>
   <div class="gallery grid">
 
-{% for item in page.gallery %}
+  {% for item in page.gallery %}
 
     <div class="{{item.column-size}}">
       <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
       </div>
     </div> 
 
-    {% endfor %}
+  {% endfor %}
 
   </div>
 
@@ -109,3 +123,5 @@ gallery:
     </div> 
   </div> -->
 </section>
+
+{% endif %}
