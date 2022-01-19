@@ -191,7 +191,7 @@ a:hover {
 
 /*Header and footer styles*/
 header {
-  background-image: url("Images/dog\ walking\ sunflowers\ header\ .jpg");
+  background-image: url("Images/dog-walking-sunflowers-header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -250,30 +250,30 @@ footer a {
 }
 
 .bg-tired {
-  background-image: url("/Images/the-sleep-co\ pup\ 1\ \(4\).jpg");
+  background-image: url("/Images/the-sleep-co-pup-1.jpg");
 }
 .bg-happy {
-  background-image: url("/Images/the-sleep-co\ pup\ 3\ \(1\).jpg");
+  background-image: url("/Images/the-sleep-co-pup-2.jpg");
   background-position: 50% 60%;
 }
 .bg-pug {
-  background-image: url("/Images/pug\ photo-1517849845537-4d257902454a.jpg");
+  background-image: url("/Images/pug-photo.jpg");
   background-repeat: repeat-x;
   background-position: 50% 60%;
 }
 
 .bg-lying {
-  background-image: url("/Images/the-sleep-co\ dog\ lying\ in\ grass.jpg");
+  background-image: url("/Images/the-sleep-co-dog-lying-in-grass.jpg");
   background-position: 50%;
 }
 
 .bg-grass {
-  background-image: url("/Images/the-sleep-co\ grass.jpg");
+  background-image: url("/Images/the-sleep-co-grass.jpg");
   background-position: 50% 60%;
 }
 
 .bg-playing {
-  background-image: url("/Images/dogs\ playing.jpg");
+  background-image: url("/Images/dogs-playing.jpg");
   background-position: cover;
 }
 
@@ -301,7 +301,7 @@ footer a {
 
 /*image styles*/
 .bg-image {
-  background-image: url("/images/dogs\ playing.jpg");
+  background-image: url("/images/dogs-playing.jpg");
   background-size: cover;
   background-repeat: norepeat;
   background-color: rgb(240,240,240);
