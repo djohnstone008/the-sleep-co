@@ -361,6 +361,39 @@ textarea:focus {
   line-height: 1;
 }
 
+/* Overlay styles -------------- */
+
+.bg-overlay {
+  position: relative;
+}
+
+.bg-overlay::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+	bottom: 0;
+	right: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* > * = selects anything that is a child of bg-overlay */
+.bg-overlay > * {
+  position: relative;
+}
+
+
+.bg-overlay-teal::before {
+  background-color: rgba(0, 128, 128,0.5);
+}
+
+
+/* Gradient Overlay  */ 
+
+.bg-overlay-gradient::before { 
+  background: linear-gradient(0, rgba(0,0,0,0.5), rgba(0,0,0,0));
+} 
+
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */
 
 .show-xs,
@@ -510,3 +543,4 @@ textarea:focus {
     max-width: 100%;
   }
 }
+
